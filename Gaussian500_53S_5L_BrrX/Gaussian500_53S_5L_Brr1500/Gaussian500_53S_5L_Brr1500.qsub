@@ -1,0 +1,22 @@
+#!/bin/bash -l                                                                                                                       
+#PBS -N Brr1500
+#PBS -o .
+#PBS -e .
+#PBS -l nodes=1:ppn=16,mem=32gb
+#PBS -q mem64
+
+module purge
+module load anaconda3.8
+
+# Setup runtime environment
+source activate rdqc
+export PYTHONDONTWRITEBYTECODE=1
+ulimit -s unlimited
+
+echo "======================================================="
+echo "Working directory is" $PBS_O_WORKDIR
+echo "Starting on $(hostname) at $(date)"
+
+# Run g16 job
+cd $PBS_O_WORKDIR
+python3 test.py
