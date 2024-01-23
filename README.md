@@ -1,1 +1,1 @@
-# High-fidelity-Rydberg-control-Z-gates-with-time-optimal-pulses
+# High-fidelity Rydberg controlled-Z gates with optimal pulses
