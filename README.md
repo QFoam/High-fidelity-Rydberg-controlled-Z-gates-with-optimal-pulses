@@ -1,9 +1,17 @@
 # High-fidelity Rydberg controlled-Z gates with optimal pulses
 
+This repository contains the simulation code, optimization routines, parameter scans,
+and figure-generating notebooks that accompany the paper:
+
+> **High-fidelity Rydberg controlled-Z gates with optimized pulses**
+> T. H. Chang, T. N. Wang, H. H. Jen, and Y.-C. Chen
+> *New Journal of Physics* **25**, 123007 (2023)
+> DOI: [10.1088/1367-2630/ad0fa9](https://doi.org/10.1088/1367-2630/ad0fa9) | arXiv: [2303.16395](https://arxiv.org/abs/2303.16395)
+
 Numerical optimization of laser pulses for high-fidelity Rydberg controlled-Z (CZ)
-gates in neutral-atom quantum computing. The repository contains the simulation
-code, optimization routines, parameter scans, and figure-generating notebooks that
-accompany the manuscript of the same title.
+gates in neutral-atom quantum computing. Bell fidelities up to 99.92% are achieved by
+tuning temporal pulse shapes, and the resulting pulses are robust to thermal
+fluctuations and excitation-field variations.
 
 Two ground-state atoms are coupled to a Rydberg state and the gate is realized
 through the Rydberg blockade. The time-dependent master equation is integrated with
@@ -154,9 +162,31 @@ The notebooks in `Manuscript-figures/` read the `out*.npz` result files from the
 directories and produce the published figures (`fig1`–`fig6`, plus appendix figures on
 Doppler/dephasing and `Brr` fluctuations) as `.eps`/`.png` files.
 
+## Citation
+
+If you use this code in your research, please cite:
+
+```bibtex
+@article{Chang2023,
+  author  = {Chang, T. H. and Wang, T. N. and Jen, H. H. and Chen, Y.-C.},
+  title   = {High-fidelity {Rydberg} controlled-{Z} gates with optimized pulses},
+  journal = {New Journal of Physics},
+  volume  = {25},
+  pages   = {123007},
+  year    = {2023},
+  doi     = {10.1088/1367-2630/ad0fa9},
+  url     = {https://doi.org/10.1088/1367-2630/ad0fa9}
+}
+```
+
 ## References
 
-1. M. Saffman, I. I. Beterov, A. Dalal, E. J. Páez, and B. C. Sanders,
+1. T. H. Chang, T. N. Wang, H. H. Jen, and Y.-C. Chen,
+   "High-fidelity Rydberg controlled-Z gates with optimized pulses,"
+   *New J. Phys.* **25**, 123007 (2023).
+   DOI: [10.1088/1367-2630/ad0fa9](https://doi.org/10.1088/1367-2630/ad0fa9)
+
+2. M. Saffman, I. I. Beterov, A. Dalal, E. J. Páez, and B. C. Sanders,
    "Symmetric Rydberg controlled-Z gates with adiabatic pulses,"
    *Phys. Rev. A* **101**, 062309 (2020).
 
